@@ -1,0 +1,27 @@
+#container{
+  margin: 0 auto;
+  height:500px;
+  width:800px;
+  border:solid 1px black;
+  border-radius:1%;
+  cursor:crosshair;
+}
+#erase{
+  margin-top:2%;
+  text-align:center;
+}
+.row{
+  height:31.25px;
+  width:800px;
+}
+.square{
+  padding:0px;
+  margin:0px 0px;
+  height:31.25px;
+  width:50px;
+  display:inline-block;
+  float:left;
+}
+img{
+  cursor:pointer;
+}
