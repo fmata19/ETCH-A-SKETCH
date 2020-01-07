@@ -9,7 +9,7 @@ function initGrid(){
     let square=document.createElement("div");
     square.className="square";
     square.addEventListener("mouseover",function(){
-      this.style.backgroundColor="red";
+      this.style.backgroundColor="black";
     });
     row.appendChild(square);
     }
@@ -51,7 +51,7 @@ function newGrid(numSquares){
       square.style.float="left";
       
       square.addEventListener("mouseover",function(){
-        this.style.backgroundColor="red";
+        this.style.backgroundColor="black";
       });
     row.appendChild(square);
   }
@@ -75,7 +75,10 @@ const btn= document.getElementById("erase");
 
 btn.addEventListener("click", function(){
   clear();
-  let numSquares=parseInt(prompt("How many sqaures per side in new grid?"));
+  let numSquares=parseInt(prompt("How Many Sqaures Per Side In New Grid?"));
+  if(isNaN(numSquares)){
+    numSquares=32;
+  }
   newGrid(numSquares);
 });
 
